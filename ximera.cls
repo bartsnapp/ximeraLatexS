@@ -28,6 +28,7 @@
 %% src/interactives/javascript.dtx  (with options: `classXimera')
 %% src/interactives/include.dtx  (with options: `classXimera')
 %% src/interactives/geogebra.dtx  (with options: `classXimera')
+%% src/interactives/doenet.dtx  (with options: `classXimera')
 %% src/interactives/desmos.dtx  (with options: `classXimera')
 %% src/interactives/google.dtx  (with options: `classXimera')
 %% src/interactives/graph.dtx  (with options: `classXimera')
@@ -663,6 +664,7 @@ Interactive
 }
 
 \newcommand{\geogebra}[3]{GeoGebra link: \url{https://www.geogebra.org/m/#1}}
+\newcommand{\doenet}[2]{Doenet link: \url{https://staging.doenet.org/activityViewer/#1}}%
 \newcommand{\desmos}[3]{Desmos link: \url{https://www.desmos.com/calculator/#1}}
 \newcommand{\desmosThreeD}[3]{Desmos3D link: \url{https://www.desmos.com/3d/#1}}
 \newcommand{\googleSheet}[5]{%

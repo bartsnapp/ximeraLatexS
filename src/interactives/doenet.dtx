@@ -3,7 +3,7 @@
 %    \begin{macrocode}
 %<*classXimera>
 %Doenet link
-\newcommand{\doenet}[2]{Doenet link: \url{https://www.beta.doenet.org/activityViewer/#1}}
+\newcommand{\doenet}[2]{Doenet link: \url{https://staging.doenet.org/activityViewer/#1}}%
 %</classXimera>
 %    \end{macrocode}
 % Define keys for answer Doenet key=value pairs.
@@ -11,6 +11,12 @@
 %<*htXimera>
 %command definition
 \renewcommand{\doenet}[2]{%
-  \HCode{<iframe src="https://beta.doenet.org/embed/#1" width="#2px" style="border: 0"></iframe>}}
+  \HCode{<iframe class="doenet-frame" src="https://staging.doenet.org/embed/#1" width="#2px" height="500px" style="border: 0"></iframe>}}
 %</htXimera>
+%    \end{macrocode}
+% Doenet script configuration.
+%    \begin{macrocode}
+%<*cfgXimera>
+\Configure{@HEAD}{\HCode{<script type="text/javascript">console.log("Doenet script loaded");</script>\Hnewline}}
+%</cfgXimera>
 %    \end{macrocode}
